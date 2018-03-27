@@ -9,7 +9,7 @@
 import UIKit
 
 class SortingViewController: UIViewController {
-
+    var difficulty : Int?
     override func viewDidLoad() {
         super.viewDidLoad()
 

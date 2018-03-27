@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		410E4AD2206AAF01004E0BB7 /* MemoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410E4AD1206AAF01004E0BB7 /* MemoryViewController.swift */; };
+		4156DBCE2069B9B500CB81D4 /* card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4156DBCD2069B9B500CB81D4 /* card.swift */; };
 		41FE1149206061790024B867 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FE1148206061790024B867 /* AppDelegate.swift */; };
 		41FE114B206061790024B867 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FE114A206061790024B867 /* ViewController.swift */; };
 		41FE114E206061790024B867 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41FE114C206061790024B867 /* Main.storyboard */; };
@@ -14,7 +16,6 @@
 		41FE1153206061790024B867 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41FE1151206061790024B867 /* LaunchScreen.storyboard */; };
 		41FE115E206061790024B867 /* Kids_Joy_CenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FE115D206061790024B867 /* Kids_Joy_CenterTests.swift */; };
 		41FE1169206061790024B867 /* Kids_Joy_CenterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FE1168206061790024B867 /* Kids_Joy_CenterUITests.swift */; };
-		41FE11772060A4460024B867 /* MemoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FE11762060A4460024B867 /* MemoryViewController.swift */; };
 		41FE11792060C7090024B867 /* SortingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FE11782060C7090024B867 /* SortingViewController.swift */; };
 		41FE117B2060C7260024B867 /* BalloonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FE117A2060C7260024B867 /* BalloonViewController.swift */; };
 		41FE117D206187DF0024B867 /* RadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FE117C206187DF0024B867 /* RadioButton.swift */; };
@@ -39,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		410E4AD1206AAF01004E0BB7 /* MemoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoryViewController.swift; sourceTree = "<group>"; };
+		4156DBCD2069B9B500CB81D4 /* card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = card.swift; sourceTree = "<group>"; };
 		41FE1145206061790024B867 /* Kids Joy Center.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kids Joy Center.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		41FE1148206061790024B867 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41FE114A206061790024B867 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -52,7 +55,6 @@
 		41FE1164206061790024B867 /* Kids Joy CenterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Kids Joy CenterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		41FE1168206061790024B867 /* Kids_Joy_CenterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kids_Joy_CenterUITests.swift; sourceTree = "<group>"; };
 		41FE116A206061790024B867 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		41FE11762060A4460024B867 /* MemoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryViewController.swift; sourceTree = "<group>"; };
 		41FE11782060C7090024B867 /* SortingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortingViewController.swift; sourceTree = "<group>"; };
 		41FE117A2060C7260024B867 /* BalloonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalloonViewController.swift; sourceTree = "<group>"; };
 		41FE117C206187DF0024B867 /* RadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButton.swift; sourceTree = "<group>"; };
@@ -107,17 +109,18 @@
 		41FE1147206061790024B867 /* Kids Joy Center */ = {
 			isa = PBXGroup;
 			children = (
+				410E4AD1206AAF01004E0BB7 /* MemoryViewController.swift */,
 				41FE1148206061790024B867 /* AppDelegate.swift */,
 				41FE114A206061790024B867 /* ViewController.swift */,
 				41FE114C206061790024B867 /* Main.storyboard */,
 				41FE114F206061790024B867 /* Assets.xcassets */,
 				41FE1151206061790024B867 /* LaunchScreen.storyboard */,
 				41FE1154206061790024B867 /* Info.plist */,
-				41FE11762060A4460024B867 /* MemoryViewController.swift */,
 				41FE11782060C7090024B867 /* SortingViewController.swift */,
 				41FE117A2060C7260024B867 /* BalloonViewController.swift */,
 				41FE117C206187DF0024B867 /* RadioButton.swift */,
 				41FE117E2061A48C0024B867 /* HighScoreViewController.swift */,
+				4156DBCD2069B9B500CB81D4 /* card.swift */,
 			);
 			path = "Kids Joy Center";
 			sourceTree = "<group>";
@@ -276,11 +279,12 @@
 			files = (
 				41FE117B2060C7260024B867 /* BalloonViewController.swift in Sources */,
 				41FE117F2061A48C0024B867 /* HighScoreViewController.swift in Sources */,
-				41FE11772060A4460024B867 /* MemoryViewController.swift in Sources */,
 				41FE114B206061790024B867 /* ViewController.swift in Sources */,
 				41FE117D206187DF0024B867 /* RadioButton.swift in Sources */,
 				41FE1149206061790024B867 /* AppDelegate.swift in Sources */,
+				410E4AD2206AAF01004E0BB7 /* MemoryViewController.swift in Sources */,
 				41FE11792060C7090024B867 /* SortingViewController.swift in Sources */,
+				4156DBCE2069B9B500CB81D4 /* card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

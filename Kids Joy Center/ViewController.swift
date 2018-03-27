@@ -28,6 +28,7 @@ class ViewController: UIViewController {
 
     var isGame = [Bool]()
     var isDif = [Bool]()
+    var selectedDif : Int?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -73,7 +74,7 @@ class ViewController: UIViewController {
             performSegue(withIdentifier: "toBalloon", sender: sender)
         }
         else{
-            createAlert(title: "No Game", message: "You did not Select a game")
+            createAlert(title: "No Game", message: "You did not Select a game or a difficulty level")
         }
     }
     
@@ -101,10 +102,23 @@ class ViewController: UIViewController {
         if isDif.index(where: { $0 == true }) == nil{
             isDif[position] = true
             dif.alpha = 0.5
+            selectedDif = position + 1
+            
         }
         else{
             dif.alpha = 1
             isDif[position] = false
+        }
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? MemoryViewController{
+            destination.difficulty = selectedDif
+        }
+        else if let destination = segue.destination as? SortingViewController{
+            destination.difficulty = selectedDif
+        }
+        else if let destination = segue.destination as? BalloonViewController{
+            destination.difficulty = selectedDif
         }
     }
 }
