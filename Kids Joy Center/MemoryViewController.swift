@@ -11,15 +11,20 @@ class arra {
     static var imgs = [1,2,3,4,5,6,1,2,3,4,5,6]
 }
 
+
 class MemoryViewController: UIViewController {
     var difficulty : Int?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        print (makeList(n: 15))
         print(difficulty!,"how hard")
         var dif : Array<String> = []
 
+        //defining difficulty
         if difficulty == 1 {
             dif = ["1", "2", "3"]
+            arra.imgs = [1,2,3,4,5,6,1,2,3,4,5,6]
         }
         else if difficulty == 2 {
             dif = ["1", "2", "3", "4"]
@@ -30,15 +35,18 @@ class MemoryViewController: UIViewController {
             arra.imgs = [1,2,3,4,5,6,7,8,9,10,1,2,3,4,5,6,7,8,9,10]
         }
 
+        
+        // creating the mystery blocks
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background")!)
-
         let stackView = createStackView(quant: dif)
         self.view.addSubview(stackView)
-
         stackView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
         stackView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor).isActive = true
 
+
     }
+    
+
 
     private func createStackView(quant: [String])-> UIStackView {
         let retStackView = UIStackView()
@@ -61,7 +69,7 @@ class MemoryViewController: UIViewController {
 
         return retStackView
     }
-  
+
     private func createButtons(named: [String]) -> [UIButton] {
         let image = UIImage(named: "question") as UIImage?
         var returnArr = [UIButton]()
@@ -86,6 +94,13 @@ class MemoryViewController: UIViewController {
 
     @objc func action(sender:UIButton!) {
         sender.setImage(nil, for: .normal)
-        
+    }
+    
+    func makeList(n:Int ) -> [Int] {
+        var result:[Int] = []
+        for _ in 0..<n {
+            result.append(Int(arc4random_uniform(20) + 1))
+        }
+        return result.sorted()
     }
 } // end of MemoryViewController class

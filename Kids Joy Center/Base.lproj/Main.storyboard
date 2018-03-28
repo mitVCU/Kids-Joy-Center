@@ -93,7 +93,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="wgt-Ok-2zF">
-                        <barButtonItem key="rightBarButtonItem" title="High Score" style="plain" id="j6K-4T-O7H">
+                        <barButtonItem key="rightBarButtonItem" title="High Score" id="j6K-4T-O7H">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Bc8-9s-9tp">
                                 <rect key="frame" x="777" y="7" width="227" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -155,7 +155,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WA1-gK-hdz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1200.5859375" y="-485.15625"/>
+            <point key="canvasLocation" x="1201" y="-929"/>
         </scene>
         <!--Sorting View Controller-->
         <scene sceneID="mDG-cK-xIh">
@@ -179,7 +179,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DaY-SH-CBB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1200.5859375" y="130.46875"/>
+            <point key="canvasLocation" x="1201" y="131"/>
         </scene>
         <!--Balloon View Controller-->
         <scene sceneID="3Di-fU-Ycy">
@@ -203,7 +203,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RoZ-RU-Bei" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1200.5859375" y="720.3125"/>
+            <point key="canvasLocation" x="1201" y="1025"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Fr5-Tb-x2O">

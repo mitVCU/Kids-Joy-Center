@@ -103,7 +103,6 @@ class ViewController: UIViewController {
             isDif[position] = true
             dif.alpha = 0.5
             selectedDif = position + 1
-            
         }
         else{
             dif.alpha = 1
@@ -120,6 +119,12 @@ class ViewController: UIViewController {
         else if let destination = segue.destination as? BalloonViewController{
             destination.difficulty = selectedDif
         }
+    }
+
+    @IBAction func unWindSegue(segue: UIStoryboardSegue) {
+        print("this is unwinding")
+        guard segue.source is MemoryViewController else {return}
+        print("unwinded from MemGaem")
     }
 }
 
